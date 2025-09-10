@@ -1,0 +1,2 @@
+# Example requirements for RAP-compliant Python project
+pytest
