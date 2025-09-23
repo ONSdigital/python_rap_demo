@@ -4,11 +4,14 @@ Welcome to the RAP (Reproducible Analytical Pipeline) Sandbox! This repository i
 
 ## Getting Started
 
-1. **Clone the repository:**
-   ```cmd
-   git clone <repo-url>
-   cd python_rap_demo
-   ```
+1. **Fork the repository:**
+   - Go to the GitHub page for this repository.
+   - Click the "Fork" button in the top right to create your own copy.
+   - Clone your forked repository:
+     ```cmd
+     git clone https://github.com/<your-username>/python_rap_demo.git
+     cd python_rap_demo
+     ```
 
 2. **Set up your environment:**
    - Create and activate a virtual environment (recommended)
@@ -16,12 +19,6 @@ Welcome to the RAP (Reproducible Analytical Pipeline) Sandbox! This repository i
      ```cmd
      pip install -r requirements.txt
      ```
-
-3. **Set up pre-commit hooks:**
-   ```cmd
-   pre-commit install
-   ```
-   This will automatically run code quality and security checks before each commit.
 
 ## Repository Structure
 
