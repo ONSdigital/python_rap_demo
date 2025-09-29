@@ -1,7 +1,7 @@
 # RAP Unit Testing Guide
 
 ## What are Unit Tests?
-Unit tests are small, automated tests that check individual pieces of code (functions, classes, modules) to ensure they work as expected. In RAP (Reproducible Analytical Pipeline), unit tests help guarantee reproducibility, reliability, and transparency by catching errors early and documenting expected behavior.
+Unit tests are small, automated tests that check individual pieces of code (functions, classes, modules) to ensure they work as expected.
 
 ## Why Unit Tests Matter in RAP
 - **Reproducibility:** Tests ensure code produces the same results every time.
@@ -12,15 +12,41 @@ Unit tests are small, automated tests that check individual pieces of code (func
 ## How Unit Tests Work in RAP
 - Each module (e.g., io, cleaning, processing) has its own test file in the `tests/` folder.
 - Tests use sample data and clear assertions to check expected outcomes.
-- Tests should be independent, reproducible, and easy to understand.
-- Run all tests with:
+- If any test fails, review the error message, fix your code, and re-run the tests.
+
+## How to Run Unit Tests
+- To run all unit tests, open a terminal in your project root and enter:
   ```cmd
   pytest tests
   ```
-- If any test fails, review the error message, fix your code, and re-run the tests.
+- You can also run a specific test file, e.g.:
+  ```cmd
+  pytest tests/test_cleaning.py
+  ```
+- If you use VS Code, you can run the "Run Tests" task from the command palette or tasks menu.
+
+## How to Add New Unit Tests
+- For a new module (e.g., `src/python_rap_demo/new_module.py`):
+  1. Create a new test file in the `tests/` folder, e.g., `tests/test_new_module.py`.
+  2. Import the functions or classes you want to test.
+  3. Write test functions using `assert` statements to check expected behaviour.
+  4. Add comments and docstrings to explain each test.
+- For an existing module:
+  1. Open its test file in `tests/` (e.g., `tests/test_utils.py`).
+  2. Add new test functions for any new code or edge cases.
+  3. Follow the same style and structure as existing tests.
+- Example test function:
+  ```python
+  def test_my_function():
+      """Test that my_function returns expected result for sample input."""
+      result = my_function(sample_input)
+      assert result == expected_output
+  ```
+- After adding tests, run them to check everything works as expected.
 
 ## Practical Tips
 - Add tests for every new function or module you create.
 - Use comments and docstrings to explain what each test does.
 - Test edge cases and typical usage.
 - Keep tests simple and focused.
+- Add tests for new functions when you create them.
