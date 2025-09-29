@@ -25,7 +25,7 @@ The `config` folder is used to store configuration files that control how your R
   - You can add config files for specific tools (e.g., `pre-commit`, `pytest`, `bandit`), or for different environments (e.g., production vs. development).
 
 ## Practical Example
-- In this RAP sandbox, `user_config.yaml` tells the pipeline where to find input data, where to save cleaned data, and where to write the final report.
+- In this RAP repository, `user_config.yaml` tells the pipeline where to find input data, where to save cleaned data, and where to write the final report.
 - Uesrs of the pipeline can change where files are read from or written to without updating the code.
 
 ## Summary

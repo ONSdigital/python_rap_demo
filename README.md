@@ -1,6 +1,6 @@
-# RAP Sandbox for Python
+# RAP demonstration repository for Python
 
-Welcome to the RAP (Reproducible Analytical Pipeline) Sandbox! This repository is designed for beginners to practice RAP principles, experiment with code, and learn best practices for reproducible, automated, and transparent analytical pipelines in Python.
+Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! This repository is designed for beginners to practice RAP principles, experiment with code, and learn best practices for reproducible, automated, and transparent analytical pipelines in Python.
 
 ## Getting Started
 
@@ -41,7 +41,7 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
   - Extend the pipeline
   - Apply RAP principles in real code
 
-## How to Use the Sandbox
+## How to Use this repository
 
 - **Main pipeline:** Run and explore the code in `src/` to see a working RAP pipeline.
 - **Exercises:** Go to `exercises/` and follow the instructions in each exercise's README.
@@ -58,10 +58,6 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
 ## Contributing
 
 This repo is for learning and experimentation. If you want to contribute improvements, please read `CONTRIBUTING.md`.
-
-## License
-
-MIT License
 
 ---
 

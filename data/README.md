@@ -22,7 +22,7 @@ The `data` folder is used to store datasets for your RAP (Reproducible Analytica
 - **Example Data:** Small sample files for testing or demonstration
 
 ## Practical Example
-- In this RAP sandbox, `data/health_data.csv` is an example dataset for practicing pipeline steps.
+- In this RAP repository, `data/health_data.csv` is an example dataset for practicing pipeline steps.
 - You can add more files for different stages, but always check `.gitignore` to make sure sensitive data is not tracked.
 
 ## Summary
