@@ -19,9 +19,14 @@ addopts = [
     "-vv",
     "--doctest-modules"
 ]
-doctest_optionflags = "NORMALIZE_WHITESPACE"
+doctest_optionflags = [
+    "NORMALIZE_WHITESPACE"
+]
 testpaths = [
     "./tests"
+]
+python_paths = [
+    "src"
 ]
 
 # `bandit` configurations

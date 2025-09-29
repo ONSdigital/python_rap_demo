@@ -8,7 +8,7 @@
 # - Installs your project's dependencies
 # - Runs all unit tests in the 'tests/' folder
 #
-# Each step is explained below for beginners.
+# Each step is explained below.
 
 name: CI
 
@@ -39,8 +39,8 @@ jobs:
       # Step 4: Run all unit tests in the 'tests/' folder
       - name: Run tests
         run: |
-          python -m unittest discover tests   # Run all tests using Python's unittest
-          # You can replace this with 'pytest tests' if you prefer pytest
+          pytest tests   # Run all tests using Python's pytest
+          # You can replace this with 'python -m unittest discover tests' if you prefer unittest
 
 # If any step fails, the workflow will stop and show an error in GitHub.
 # This helps you catch problems early.
