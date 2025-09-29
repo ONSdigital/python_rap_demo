@@ -1,5 +1,5 @@
 <!--
-This is a Pull Request (PR) template for the RAP Sandbox repository.
+This is a Pull Request (PR) template for the RAP demonsatration repository.
 When you open a new PR on GitHub, this template will appear automatically in the PR description box.
 It helps you provide all necessary information and ensures standard checks are followed before merging code.
 You can find this template in the .github folder of the repository, and it will be visible when you create a PR via the GitHub web interface.

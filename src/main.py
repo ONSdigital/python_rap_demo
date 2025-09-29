@@ -1,3 +1,17 @@
+"""
+main.py: Entry point for the RAP (Reproducible Analytical Pipeline) demo project.
+
+This script coordinates the full analysis pipeline, including:
+- Loading configuration settings
+- Reading input health data
+- Cleaning and transforming the data
+- Calculating disease prevalence
+- Generating a markdown report
+
+Run this file to execute the complete RAP workflow using modular functions from
+python_rap_demo.
+"""
+
 # Main pipeline script for RAP demo
 import os
 

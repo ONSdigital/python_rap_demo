@@ -1,5 +1,5 @@
 # This is a GitHub Actions workflow file for Continuous Integration (CI).
-# CI automatically checks your code for errors and runs tests every time you push changes
+# CI automatically checks your code for errors and runs your unit tests every time you push changes
 # or open a pull request to the main branch. This helps keep your code reproducible and reliable.
 #
 # What this file does:

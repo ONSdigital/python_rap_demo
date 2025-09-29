@@ -1,5 +1,5 @@
 """
-cleaning.py: Data cleaning functions for RAP pipeline
+cleaning.py: Data cleaning functions
 """
 
 import pandas as pd
