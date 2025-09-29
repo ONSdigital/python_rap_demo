@@ -23,7 +23,9 @@ doctest_optionflags = "NORMALIZE_WHITESPACE"
 testpaths = [
     "./tests"
 ]
-python_paths = src
+python_paths = [
+    src
+]
 
 # `bandit` configurations
 [tool.bandit]
