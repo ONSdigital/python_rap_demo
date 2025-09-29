@@ -24,7 +24,7 @@ testpaths = [
     "./tests"
 ]
 python_paths = [
-    src
+    "src"
 ]
 
 # `bandit` configurations
