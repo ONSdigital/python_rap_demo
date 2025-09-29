@@ -1,5 +1,5 @@
 """
-cleaning.py: Data cleaning functions for RAP pipeline
+cleaning.py: Data cleaning functions
 """
 
 import pandas as pd
@@ -7,19 +7,23 @@ import pandas as pd
 
 def clean_health_data(df: pd.DataFrame) -> pd.DataFrame:
     """
-    Clean health data by handling missing values and standardizing columns.
+    Clean health data by dropping rows with missing values in key columns.
 
     Args:
-        df (pd.DataFrame): Raw health data DataFrame.
+        df (pd.DataFrame): Raw health data.
 
     Returns:
-        pd.DataFrame: Cleaned health data DataFrame.
+        pd.DataFrame: Cleaned health data with no missing values in critical columns.
     """
     df = df.copy()
-    # Drop rows with missing diagnosis
-    df = df.dropna(subset=["diagnosis"])
+
+    # Drop rows with missing values in height_cm, weight_kg, or diagnosis columns
+    df = df.dropna(subset=["height_cm", "weight_kg", "diagnosis"])
+
     # Fill missing smoker values with 'No'
     df["smoker"] = df["smoker"].fillna("No")
+
     # Ensure gender is uppercase
     df["gender"] = df["gender"].str.upper()
+
     return df
