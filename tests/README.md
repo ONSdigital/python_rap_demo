@@ -2,6 +2,8 @@
 
 ## What are Unit Tests?
 Unit tests are small, automated tests that check individual pieces of code (functions, classes, modules) to ensure they work as expected.
+For examples of written tests, look through the scripts in the `tests` folder of the pipeline. More information on unit tests can be found
+in the QA for RAP learning resource [add link].
 
 ## Why Unit Tests Matter in RAP
 - **Reproducibility:** Tests ensure code produces the same results every time.
@@ -11,11 +13,11 @@ Unit tests are small, automated tests that check individual pieces of code (func
 
 ## How Unit Tests Work in RAP
 - Each module (e.g., io, cleaning, processing) has its own test file in the `tests/` folder.
-- Tests use sample data and clear assertions to check expected outcomes.
-- If any test fails, review the error message, fix your code, and re-run the tests.
+- Each function has one or more tests to ensure that it produces an expected output for different scenarios.
+- If any test fails, the developer must review the error message, fix the code, and re-run the tests.
 
 ## How to Run Unit Tests
-- To run all unit tests, open a terminal in your project root and enter:
+- To run all unit tests, open a terminal in the project root and enter:
   ```cmd
   pytest tests
   ```
@@ -23,7 +25,6 @@ Unit tests are small, automated tests that check individual pieces of code (func
   ```cmd
   pytest tests/test_cleaning.py
   ```
-- If you use VS Code, you can run the "Run Tests" task from the command palette or tasks menu.
 
 ## How to Add New Unit Tests
 - For a new module (e.g., `src/python_rap_demo/new_module.py`):
