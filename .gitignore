@@ -4,21 +4,30 @@
 
 # Data and config (if you want to keep local or sensitive files out of Git)
 # Uncomment the next lines if you want to ignore local data/config
-# data/             # Would ignore all files in the data folder (e.g., health_data.csv)
-# config/           # Would ignore all files in the config folder (e.g., user_config.yaml)
+# Ignore all files in the data folder (e.g., health_data.csv)
+# data/
+# Ignore all files in the config folder (e.g., user_config.yaml)
+# config/
 
 # Test and coverage outputs
-.pytest_cache/      # Ignore pytest cache folder (e.g., tests/.pytest_cache/)
-.cache              # Ignore generic cache files/folders
+# Ignore pytest cache folder (e.g., tests/.pytest_cache/)
+.pytest_cache/
+# Ignore generic cache files/folders
+.cache
 
 # Build and distribution folders (if packaging)
-build/              # Ignore build output folder
-dist/               # Ignore distribution output folder
-*.egg-info/         # Ignore Python package metadata folders
+# Ignore build output folder
+build/
+# Ignore distribution output folder
+dist/
+# Ignore Python package metadata folders
+*.egg-info/
 
 # Python cache and bytecode
-__pycache__/        # Ignore all Python cache folders (e.g., src/__pycache__/)
-*.py[cod]           # Ignore Python bytecode files (e.g., main.pyc, utils.pyo)
+# Ignore all Python cache folders (e.g., src/__pycache__/)
+__pycache__/
+# Ignore Python bytecode files (e.g., main.pyc, utils.pyo)
+*.py[cod]
 
 # Environments
 # Ignore virtual environment folders. Below is a list of a few that are used, but custom named environments
