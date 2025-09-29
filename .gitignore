@@ -9,12 +9,6 @@
 # Ignore all files in the config folder (e.g., user_config.yaml)
 # config/
 
-# Test and coverage outputs
-# Ignore pytest cache folder (e.g., tests/.pytest_cache/)
-.pytest_cache/
-# Ignore generic cache files/folders
-.cache
-
 # Build and distribution folders (if packaging)
 # Ignore build output folder
 build/
@@ -24,6 +18,10 @@ dist/
 *.egg-info/
 
 # Python cache and bytecode
+# Ignore pytest cache folder (e.g., tests/.pytest_cache/)
+.pytest_cache/
+# Ignore generic cache files/folders
+.cache
 # Ignore all Python cache folders (e.g., src/__pycache__/)
 __pycache__/
 # Ignore Python bytecode files (e.g., main.pyc, utils.pyo)
