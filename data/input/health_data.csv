@@ -1,5 +1,5 @@
 patient_id,month,age,gender,height_cm,weight_kg,smoker,diagnosis
-1,2025-01,45,M,175,85,Yes,Hypertension
+1,2025-01,45,M,,85,Yes,Hypertension
 2,2025-01,34,F,160,,No,Healthy
 3,2025-01,67,F,155,70,No,Diabetes
 4,2025-01,23,M,180,77,No,Healthy
@@ -31,11 +31,11 @@ patient_id,month,age,gender,height_cm,weight_kg,smoker,diagnosis
 30,2025-06,42,M,162,,No,Healthy
 31,2025-07,54,F,159,65,No,Diabetes
 32,2025-07,61,M,178,88,Yes,Hypertension
-33,2025-07,35,F,163,59,No,Healthy
+33,2025-07,35,F,,59,No,Healthy
 34,2025-07,49,M,174,92,Yes,Hypertension
-35,2025-07,26,F,157,54,No,Healthy
+35,2025-07,26,F,,54,No,Healthy
 36,2025-08,66,M,169,85,No,Diabetes
-37,2025-08,31,F,161,61,No,Healthy
+37,2025-08,31,F,,61,No,Healthy
 38,2025-08,59,M,176,97,Yes,Hypertension
 39,2025-08,41,F,164,63,No,Healthy
 40,2025-08,71,M,171,78,No,Diabetes
