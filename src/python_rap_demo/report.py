@@ -34,7 +34,9 @@ def generate_markdown_report(prevalence_df: pd.DataFrame, output_path: str) -> N
         prevalence_df (pd.DataFrame): DataFrame with prevalence rates.
         output_path (str): Path to output markdown file.
     """
-    with open(output_path, "w") as f:
+    report_path = f"{output_path}disease_prevalence_report.md"
+
+    with open(report_path, "w") as f:
         f.write("# Disease Prevalence Report\n\n")
         for month in prevalence_df["month"].unique():
             month_df = prevalence_df[prevalence_df["month"] == month]
