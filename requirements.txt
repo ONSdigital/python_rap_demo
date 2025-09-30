@@ -4,3 +4,4 @@ pandas
 pre-commit
 detect-secrets
 bandit
+pyyaml
