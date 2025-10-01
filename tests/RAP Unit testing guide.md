@@ -17,6 +17,11 @@ in the QA for RAP learning resource [add link].
 - If any test fails, the developer must review the error message, fix the code, and re-run the tests.
 
 ## How to run unit tests
+- If you have not already installed the dependencies, open a terminal in the project root and enter:
+  ```cmd
+  pip install -r requirements.txt
+  ```
+
 - To run all unit tests, open a terminal in the project root and enter:
   ```cmd
   pytest tests

@@ -14,7 +14,11 @@ Welcome to the RAP (Reproducible Analytical Pipeline) Sandbox! This repository i
      ```
 
 2. **Set up your environment:**
-   - Create and activate a virtual environment (recommended)
+   - Create and activate a virtual environment (recommended):
+     ```cmd
+     python -m venv .venv
+     ```
+
    - Install dependencies:
      ```cmd
      pip install -r requirements.txt
