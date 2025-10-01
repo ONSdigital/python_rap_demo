@@ -1,22 +1,22 @@
-# RAP Unit Testing Guide
+# RAP Unit testing guide
 
-## What are Unit Tests?
+## What are unit tests?
 Unit tests are small, automated tests that check individual pieces of code (functions, classes, modules) to ensure they work as expected.
 For examples of written tests, look through the scripts in the `tests` folder of the pipeline. More information on unit tests can be found
 in the QA for RAP learning resource [add link].
 
-## Why Unit Tests Matter in RAP
+## Why unit tests matter in RAP
 - **Reproducibility:** Tests ensure code produces the same results every time.
 - **Automation:** Tests run automatically, saving time and reducing manual checking.
 - **Transparency:** Tests document what your code is supposed to do, making it easier to review and maintain.
 - **Quality:** Tests catch bugs and edge cases before code is used in production or shared with others.
 
-## How Unit Tests Work in RAP
+## How unit tests work in RAP
 - Each module (e.g., io, cleaning, processing) has its own test file in the `tests/` folder.
 - Each function has one or more tests to ensure that it produces an expected output for different scenarios.
 - If any test fails, the developer must review the error message, fix the code, and re-run the tests.
 
-## How to Run Unit Tests
+## How to run unit tests
 - To run all unit tests, open a terminal in the project root and enter:
   ```cmd
   pytest tests
@@ -26,7 +26,7 @@ in the QA for RAP learning resource [add link].
   pytest tests/test_cleaning.py
   ```
 
-## How to Add New Unit Tests
+## How to add new unit tests
 - For a new module (e.g., `src/python_rap_demo/new_module.py`):
   1. Create a new test file in the `tests/` folder, e.g., `tests/test_new_module.py`.
   2. Import the functions or classes you want to test.
@@ -45,7 +45,7 @@ in the QA for RAP learning resource [add link].
   ```
 - After adding tests, run them to check everything works as expected.
 
-## Practical Tips
+## Practical tips
 - Add tests for every new function or module you create.
 - Use comments and docstrings to explain what each test does.
 - Test edge cases and typical usage.
