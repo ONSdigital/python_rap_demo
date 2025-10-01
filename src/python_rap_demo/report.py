@@ -1,5 +1,5 @@
 """
-report.py: Markdown report generation for RAP pipeline
+report.py: Markdown report generation
 """
 
 import pandas as pd

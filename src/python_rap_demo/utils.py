@@ -1,5 +1,5 @@
 """
-utils.py: Utility functions for RAP pipeline
+utils.py: Utility functions
 """
 
 import pandas as pd
