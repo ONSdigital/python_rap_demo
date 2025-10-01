@@ -1,6 +1,14 @@
+# requirements.txt for python_rap_demo RAP project
+#
+# This file lists the Python packages needed to run, test, and maintain your project.
+# When setting up your environment, use:
+#   pip install -r requirements.txt
+# This will install all required dependencies for your pipeline, unit tests, and pre-commit hooks.
+# Update this file whenever you add new packages to your project.
+#
 # Example requirements for RAP-compliant Python project
-pytest
 pandas
+pytest
 pre-commit
 detect-secrets
 bandit

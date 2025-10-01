@@ -1,6 +1,20 @@
-# RAP Sandbox for Python
+<!--
+README.md for a typical RAP (Reproducible Analytical Pipeline) project
 
-Welcome to the RAP (Reproducible Analytical Pipeline) Sandbox! This repository is designed for beginners to practice RAP principles, experiment with code, and learn best practices for reproducible, automated, and transparent analytical pipelines in Python.
+This file provides a clear overview and guide for your analytical pipeline repository.
+
+In a RAP project, the README is essential for:
+- Describing the aims and scope of the analysis
+- Documenting setup steps and usage instructions
+- Outlining folder structure and key files
+- Explaining how to run the pipeline, tests, and automation tools
+- Sharing best practices for reproducibility, automation, and transparency
+
+A well-written README makes your RAP project accessible and easy for others to use, review, or contribute to. Update it as your project evolves.
+-->
+# RAP demonstration repository for Python
+
+Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! This repository is designed for beginners to practice RAP principles, experiment with code, and learn best practices for reproducible, automated, and transparent analytical pipelines in Python.
 
 ## Getting Started
 
@@ -14,11 +28,11 @@ Welcome to the RAP (Reproducible Analytical Pipeline) Sandbox! This repository i
      ```
 
 2. **Set up your environment:**
-   - Create and activate a virtual environment (recommended):
+   - Create and activate a virtual environment:
      ```cmd
      python -m venv .venv
+     .venv\Scripts\activate
      ```
-
    - Install dependencies:
      ```cmd
      pip install -r requirements.txt
@@ -45,27 +59,23 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
   - Extend the pipeline
   - Apply RAP principles in real code
 
-## How to Use the Sandbox
+## How to Use this repository
 
 - **Main pipeline:** Run and explore the code in `src/` to see a working RAP pipeline.
 - **Exercises:** Go to `exercises/` and follow the instructions in each exercise's README.
 - **Do not edit files in `src/` unless instructed by an exercise.**
+- **Documentation:** Information about different files and folders can be found throughout the pipeline:
+  - Files: Contain information on what they are and what they are used for in a RAP in the file itself, except .secrets.baseline. .secrets.baseline information can be found in the `docs` folder
+  - Folders: Contain a README to explain what the folder is for and typical files it contains
+  - Scripts: Fully documented with docstrings and comments.
 - **Unit tests:** Run tests with:
   ```cmd
   pytest tests
-  ```
-- **Pre-commit:** Pre-commit hooks will run automatically before each commit. You can run them manually with:
-  ```cmd
-  pre-commit run --all-files
   ```
 
 ## Contributing
 
 This repo is for learning and experimentation. If you want to contribute improvements, please read `CONTRIBUTING.md`.
-
-## License
-
-MIT License
 
 ---
 

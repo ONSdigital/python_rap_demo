@@ -1,5 +1,5 @@
 """
-io.py: Data input/output functions for RAP pipeline
+io.py: Data input/output functions
 """
 
 import pandas as pd
