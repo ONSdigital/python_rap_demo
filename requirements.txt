@@ -1,2 +1,7 @@
 # Example requirements for RAP-compliant Python project
 pytest
+pandas
+pre-commit
+detect-secrets
+bandit
+pyyaml
