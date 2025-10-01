@@ -26,7 +26,7 @@ The `config` folder is used to store configuration files that control how your R
 
 ## Practical Example
 - In this RAP repository, `user_config.yaml` tells the pipeline where to find input data, where to save cleaned data, and where to write the final report.
-- Uesrs of the pipeline can change where files are read from or written to without updating the code.
+- Users of the pipeline can change where files are read from or written to without updating the code.
 
 ## Summary
 The `config` folder is a key part of making your RAP project flexible, reproducible, and easy to use. As your project grows, you can add more config files to organise and control different parts of your analysis.
