@@ -1,5 +1,5 @@
 """
-processing.py: Data processing functions for RAP pipeline
+processing.py: Data processing functions
 """
 
 import pandas as pd
