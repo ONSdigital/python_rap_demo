@@ -28,9 +28,6 @@ __pycache__/
 *.py[cod]
 
 # Environments
-# Ignore virtual environment folders. Below is a list of a few that are used, but custom named environments
-# can also be added if needed.
-.env
 .envrc
 .venv
 env/
