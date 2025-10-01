@@ -1,4 +1,4 @@
-# What is the `src` Folder?
+# What is the `src` folder?
 
 The `src` folder is used to store the main source code for your RAP (Reproducible Analytical Pipeline) or Python package project. It helps keep your code organised, separate from data, tests, and configuration files.
 
@@ -7,7 +7,7 @@ The `src` folder is used to store the main source code for your RAP (Reproducibl
 - Makes it easier to maintain, test, and extend your project
 - Helps others understand your code structure
 
-## Common Types of Files in `src`
+## Common types of files in `src`
 - **Main pipeline scripts** (e.g., `main.py`): Entry points for running your analysis
 - **Modules and packages** (e.g., `python_rap_demo/`): Organised code for different parts of your pipeline (cleaning, processing, reporting, etc.)
 - **Utility scripts**: Helper functions or classes used across the project
@@ -16,7 +16,7 @@ The `src` folder is used to store the main source code for your RAP (Reproducibl
 ## Example Structures
 There is no single way to organise a RAP project. Select a structure that matches your project's scale and complexity, and prioritises clarity, maintainability, and ease of use for both yourself and future collaborators. Below are some common examples:
 
-### 1. RAP Best Practice: "src layout"
+### 1. RAP best practice: "src layout"
 ```
 project-root/
 ├── src/
@@ -33,7 +33,7 @@ project-root/
 - Keeps all code in `src/` and modules in a package subfolder
 - Recommended for reproducibility and modularity
 
-### 2. Flat Layout (Simple Projects)
+### 2. Flat layout (Simple Projects)
 ```
 project-root/
 ├── main.py
@@ -47,7 +47,7 @@ project-root/
 - All code files in the root folder
 - Easier for very small projects
 
-### 3. Monorepo or Multi-Package Layout
+### 3. Monorepo or multi-package layout
 ```
 project-root/
 ├── src/
@@ -59,7 +59,7 @@ project-root/
 ```
 - Useful for larger projects with multiple packages
 
-### 4. Domain-Driven Structure
+### 4. Domain-driven structure
 Organise code by analysis domain or business area.
 
 ```
@@ -75,7 +75,7 @@ project-root/
 
 Useful for projects covering multiple topics or analytical domains.
 
-### 5. Notebook-Driven RAP
+### 5. Notebook-driven RAP
 Main analysis in notebooks, supporting code in `src`.
 
 ```
@@ -95,7 +95,7 @@ project-root/
 
 Good for exploratory analysis and teaching.
 
-## Practical Tips
+## Practical tips
 - Use the "src layout" for most RAP and package projects
 - Organise code into modules and packages for clarity and reusability
 - Keep data, configs, and tests in their own folders
