@@ -2,6 +2,8 @@
 report.py: Markdown report generation
 """
 
+import os
+
 import pandas as pd
 
 
@@ -34,7 +36,7 @@ def generate_markdown_report(prevalence_df: pd.DataFrame, output_path: str) -> N
         prevalence_df (pd.DataFrame): DataFrame with prevalence rates.
         output_path (str): Path to output markdown file.
     """
-    report_path = f"{output_path}disease_prevalence_report.md"
+    report_path = os.path.join(output_path, "disease_prevalence_report.md")
 
     with open(report_path, "w") as f:
         f.write("# Disease Prevalence Report\n\n")

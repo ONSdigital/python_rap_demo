@@ -30,7 +30,7 @@ def main():
     )
     input_path = config["input_path"]
     cleaned_path = config["cleaned_path"]
-    report_path = config["report_path"]
+    report_dir = config["report_dir"]
 
     # I/O: Read data
     df = read_health_data(input_path)
@@ -41,10 +41,11 @@ def main():
     write_dataframe(df_clean, cleaned_path)
     # Processing
     prevalence_df = calculate_disease_prevalence(df_clean)
+    print(f"Clean data outputted: {cleaned_path}")
 
     # Reporting
-    generate_markdown_report(prevalence_df, report_path)
-    print(f"Report generated: {report_path}")
+    generate_markdown_report(prevalence_df, report_dir)
+    print(f"Report saved to: {report_dir}")
 
 
 if __name__ == "__main__":

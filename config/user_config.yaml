@@ -8,5 +8,5 @@
 # - Analysis options (e.g., which features to include, which months to process)
 # - Any other settings you want to change without editing code
 input_path: data/input/health_data.csv
-cleaned_path: data/health_data_cleaned.csv
-report_path: data/disease_prevalence_report.md
+cleaned_path: data/outputs/cleaned/health_data_cleaned.csv
+report_dir: data/outputs/reports/
