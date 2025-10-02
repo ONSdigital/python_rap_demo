@@ -39,7 +39,6 @@ def main():
     df_clean = clean_health_data(df)
     df_clean = add_bmi_column(df_clean)
     write_dataframe(df_clean, cleaned_path)
-
     # Processing
     prevalence_df = calculate_disease_prevalence(df_clean)
 
