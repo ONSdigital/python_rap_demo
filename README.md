@@ -54,9 +54,9 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
 - Each exercise has its own subfolder and README with instructions.
 - Work through exercises to learn how to:
   - Add new modules
+  - Use config files
   - Write unit tests
   - Set up and customize pre-commit hooks
-  - Extend the pipeline
   - Apply RAP principles in real code
 
 ## How to Use this repository
