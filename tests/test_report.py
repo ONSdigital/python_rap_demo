@@ -1,6 +1,8 @@
 """
 Unit tests for the report module in the RAP pipeline.
 """
+import os
+
 import pandas as pd
 
 from python_rap_demo.report import generate_markdown_report
@@ -20,9 +22,11 @@ def test_generate_markdown_report(tmp_path):
         "total": [20],
         "prevalence_rate": [0.5]
     })
-    out_path = tmp_path / "report.md"
-    generate_markdown_report(df, str(out_path))
+    # The function will write to <output_path>/disease_prevalence_report.md
+    out_dir = tmp_path
+    expected_file = out_dir / "disease_prevalence_report.md"
+    generate_markdown_report(df, str(out_dir) + os.sep)
     # Check that the file exists and contains expected text
-    assert out_path.exists()
-    content = out_path.read_text()
+    assert expected_file.exists()
+    content = expected_file.read_text()
     assert "Disease Prevalence Report" in content

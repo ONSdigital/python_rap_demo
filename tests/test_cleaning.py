@@ -17,7 +17,9 @@ def test_clean_health_data():
     df = pd.DataFrame({
         "diagnosis": ["A", None],
         "smoker": [None, "Yes"],
-        "gender": ["m", "f"]
+        "gender": ["m", "f"],
+        "height_cm": [170, None],
+        "weight_kg": [70, 80]
     })
     cleaned = clean_health_data(df)
     # Check that missing 'smoker' is filled
