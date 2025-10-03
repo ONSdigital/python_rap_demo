@@ -47,19 +47,7 @@ Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! 
 - `exercises/` — **Practice exercises** (see below)
 - `docs/` — Documentation
 
-## RAP Practice Exercises
-
-All exercises for RAP learning are in the `exercises/` folder. These are not part of the main pipeline, but are for practice and experimentation.
-
-- Each exercise has its own subfolder and README with instructions.
-- Work through exercises to learn how to:
-  - Add new modules
-  - Use config files
-  - Write unit tests
-  - Set up and customize pre-commit hooks
-  - Apply RAP principles in real code
-
-## How to Use this repository
+## Using the repository
 
 ### Run the pipeline
 To run the main RAP pipeline, open a terminal in your project root and enter:
@@ -79,11 +67,19 @@ Explore the existing code and add your own to the `src/` folder.
 
 ### Practice with exercises
 
-Go to `exercises/` and follow the instructions in each exercise's README.
+All exercises for RAP learning are in the `exercises/` folder. These are not part of the main pipeline, but are for practice and experimentation.
+
+- Each exercise has its own subfolder and README with instructions.
+- Work through exercises to learn how to:
+  - Add new modules
+  - Use config files
+  - Write unit tests
+  - Set up and customize pre-commit hooks
+  - Apply RAP principles in real code
 
 **Do not edit files in `src/` unless instructed by an exercise.**
 
-### Read what each file and folder is for
+### Understanding the purpose of each file and folder
 
 Information about different files and folders can be found throughout the pipeline:
   - Files: Contain information on what they are and what they are used for in a RAP in the file itself, except .secrets.baseline. .secrets.baseline information can be found in the `docs` folder
