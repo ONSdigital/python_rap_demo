@@ -99,6 +99,10 @@ Run tests with:
 
 This repo is for learning and experimentation. If you want to contribute improvements, please read `CONTRIBUTING.md`.
 
+## AI declaration
+
+AI has been used in the production of this content.
+
 ---
 
 Happy RAP coding!
