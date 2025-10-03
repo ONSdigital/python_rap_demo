@@ -61,14 +61,40 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
 
 ## How to Use this repository
 
-- **Main pipeline:** Run and explore the code in `src/` to see a working RAP pipeline.
-- **Exercises:** Go to `exercises/` and follow the instructions in each exercise's README.
-- **Do not edit files in `src/` unless instructed by an exercise.**
-- **Documentation:** Information about different files and folders can be found throughout the pipeline:
+### Run the pipeline
+To run the main RAP pipeline, open a terminal in your project root and enter:
+
+```python
+src/main.py
+```
+
+This will:
+- Load configuration from user_config.yaml
+- Read input data from health_data.csv
+- Clean and process the data
+- Write outputs and generate a markdown report in outputs
+- You should see a message confirming the report was generated.
+
+Explore the existing code and add your own to the `src/` folder.
+
+### Practice with exercises
+
+Go to `exercises/` and follow the instructions in each exercise's README.
+
+**Do not edit files in `src/` unless instructed by an exercise.**
+
+### Read what each file and folder is for
+
+Information about different files and folders can be found throughout the pipeline:
   - Files: Contain information on what they are and what they are used for in a RAP in the file itself, except .secrets.baseline. .secrets.baseline information can be found in the `docs` folder
   - Folders: Contain a README to explain what the folder is for and typical files it contains
   - Scripts: Fully documented with docstrings and comments.
-- **Unit tests:** Run tests with:
+
+### Create and run tests
+
+Test your functions by adding tests to the `tests/` folder.
+
+Run tests with:
   ```cmd
   pytest tests
   ```
