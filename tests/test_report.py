@@ -7,20 +7,24 @@ from python_rap_demo.report import format_month_section, generate_markdown_repor
 
 
 def test_format_month_section():
+    # Define the variable month used in format_month_selection
     month = "January"
+    # Create the dataframe month_df used in format_month_selection
     month_df = pd.DataFrame({
     "diagnosis": ["A", "B"],
     "case_count": [10, 20],
     "total": [20, 50],
     })
+    #Calculate the prevalence rate
     month_df["prevalence_rate"] = month_df["case_count"] / month_df["total"]
+    # Define the expected output of format_month_selection
     expected_output = (
         "## Month: January\n"
         "- A: 50.00% (10 cases)\n"
         "- B: 40.00% (20 cases)\n"
     )
-
     result = format_month_section(month, month_df)
+    # Check that the output from format_month_selection matches the expected output
     assert result.strip() == expected_output.strip()
 
 def test_generate_markdown_report(tmp_path):
