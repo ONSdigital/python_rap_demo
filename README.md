@@ -12,9 +12,11 @@ In a RAP project, the README is essential for:
 
 A well-written README makes your RAP project accessible and easy for others to use, review, or contribute to. Update it as your project evolves.
 -->
-# RAP demonstration repository for Python
+# Work in Progress - RAP demonstration repository for Python
 
 Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! This repository is designed for beginners to practice RAP principles, experiment with code, and learn best practices for reproducible, automated, and transparent analytical pipelines in Python.
+
+**This repository is still in development**
 
 ## Getting Started
 
