@@ -10,19 +10,19 @@ def test_clean_health_data():
     """
     Test the clean_health_data function to ensure it:
     - Fills missing 'smoker' values with 'No'
-    - Converts 'gender' to uppercase
+    - Converts 'sex' to uppercase
     - Drops rows with missing 'diagnosis'
     """
     # Create a sample DataFrame with missing and lowercase values
     df = pd.DataFrame({
         "diagnosis": ["A", None],
         "smoker": [None, "Yes"],
-        "gender": ["m", "f"]
+        "sex": ["m", "f"]
     })
     cleaned = clean_health_data(df)
     # Check that missing 'smoker' is filled
     assert cleaned["smoker"].iloc[0] == "No"
-    # Check that 'gender' is uppercase
-    assert all(cleaned["gender"].str.isupper())
+    # Check that 'sex' is uppercase
+    assert all(cleaned["sex"].str.isupper())
     # Check that rows with missing 'diagnosis' are dropped
     assert cleaned["diagnosis"].notnull().all()

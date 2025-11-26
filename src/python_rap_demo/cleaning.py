@@ -20,6 +20,6 @@ def clean_health_data(df: pd.DataFrame) -> pd.DataFrame:
     df = df.dropna(subset=["diagnosis"])
     # Fill missing smoker values with 'No'
     df["smoker"] = df["smoker"].fillna("No")
-    # Ensure gender is uppercase
-    df["gender"] = df["gender"].str.upper()
+    # Ensure sex is uppercase
+    df["sex"] = df["sex"].str.upper()
     return df
