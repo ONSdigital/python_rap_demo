@@ -3,9 +3,10 @@
 The `src` folder is used to store the main source code for your RAP (Reproducible Analytical Pipeline) or Python package project. It helps keep your code organised, separate from data, tests, and configuration files.
 
 ## Why is it important?
-- Keeps code organised and easy to find
-- Makes it easier to maintain, test, and extend your project
-- Helps others understand your code structure
+- Keeps all source code in one place, making it easier to find and manage as your project grows.
+- Prevents code from getting mixed up with data, configuration, or test files, which improves reproducibility and reduces mistakes.
+- Makes testing and automation simpler, as tools can target the src folder directly.
+- Follows Python and RAP best practice, so your project structure is familiar and easier for others to understand and contribute to.
 
 ## Common types of files in `src`
 - **Main pipeline scripts** (e.g., `main.py`): Entry points for running your analysis

@@ -14,7 +14,7 @@ A well-written README makes your RAP project accessible and easy for others to u
 -->
 # Work in Progress - RAP demonstration repository for Python
 
-Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! This repository is designed for beginners to practice RAP principles, experiment with code, and learn best practices for reproducible, automated, and transparent analytical pipelines in Python.
+Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! This repository is designed for beginner to intermediate coders to practice RAP principles, experiment with code, and learn best practices for Reproducible Analytical Pipelines in Python.
 
 **This repository is still in development**
 
@@ -76,7 +76,7 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
   - Add new modules
   - Use config files
   - Write unit tests
-  - Set up and customize pre-commit hooks
+  - Set up and customise pre-commit hooks
   - Apply RAP principles in real code
 
 **Do not edit files in `src/` unless instructed by an exercise.**
@@ -85,7 +85,7 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
 
 Information about different files and folders can be found throughout the pipeline:
   - Files: Contain information on what they are and what they are used for in a RAP in the file itself, except .secrets.baseline. .secrets.baseline information can be found in the `docs` folder
-  - Folders: Contain a README to explain what the folder is for and typical files it contains
+  - Folders: Contain a markdown (.md) file to explain what the folder is for and typical files it contains.
   - Scripts: Fully documented with docstrings and comments.
 
 ### Create and run tests
@@ -96,10 +96,6 @@ Run tests with:
   ```cmd
   pytest tests
   ```
-
-## Contributing
-
-This repo is for learning and experimentation. If you want to contribute improvements, please read `CONTRIBUTING.md`.
 
 ## AI declaration
 
