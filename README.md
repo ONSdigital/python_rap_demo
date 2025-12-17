@@ -79,8 +79,6 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
   - Set up and customize pre-commit hooks
   - Apply RAP principles in real code
 
-**Do not edit files in `src/` unless instructed by an exercise.**
-
 ### Understanding the purpose of each file and folder
 
 Information about different files and folders can be found throughout the pipeline:
