@@ -21,13 +21,15 @@ Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! 
 ## Getting Started
 
 1. **Fork the repository:**
-   - Go to the GitHub page for this repository.
-   - Click the "Fork" button in the top right to create your own copy.
-   - Clone your forked repository:
+   - Forking means creating your own copy of this project on GitHub. Go to the [GitHub page](https://github.com/ONSdigital/python_rap_demo) for this repository (if you are not there already) and click the "Fork" button in the top right.
+   - After forking, go to your new repository (it will be at `https://github.com/<your-username>/python_rap_demo`).
+   - Click the green "Code" button and copy the URL shown under "Clone".
+   - Open a terminal (Command Prompt) and run:
      ```cmd
      git clone https://github.com/<your-username>/python_rap_demo.git
      cd python_rap_demo
      ```
+   - **Tip:** To check you are in the project root, run `dir` and make sure you see files like `README.md` and folders like `src` and `data`.
 
 2. **Set up your environment:**
    - Create and activate a virtual environment:
@@ -62,7 +64,8 @@ This will:
 - Load configuration from user_config.yaml
 - Read input data from health_data.csv
 - Clean and process the data
-- Write outputs and generate a markdown report in outputs
+- Write the cleaned data to `data/outputs/cleaned/health_data_cleaned.csv`
+- Write outputs and generate a markdown report in `data/outputs/reports/`
 - You should see a message confirming the report was generated.
 
 Explore the existing code and add your own to the `src/` folder.
@@ -78,8 +81,6 @@ All exercises for RAP learning are in the `exercises/` folder. These are not par
   - Write unit tests
   - Set up and customise pre-commit hooks
   - Apply RAP principles in real code
-
-**Do not edit files in `src/` unless instructed by an exercise.**
 
 ### Understanding the purpose of each file and folder
 
