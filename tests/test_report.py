@@ -11,11 +11,11 @@ def test_format_month_section():
     month = "January"
     # Create the dataframe month_df used in format_month_section
     month_df = pd.DataFrame({
-    "diagnosis": ["A", "B"],
-    "case_count": [10, 20],
-    "total": [20, 50],
+        "diagnosis": ["A", "B"],
+        "case_count": [10, 20],
+        "total": [20, 50],
     })
-    #Calculate the prevalence rate
+    # Calculate the prevalence rate
     month_df["prevalence_rate"] = month_df["case_count"] / month_df["total"]
     # Define the expected output of format_month_section
     expected_output = (
@@ -26,6 +26,7 @@ def test_format_month_section():
     result = format_month_section(month, month_df)
     # Check that the output from format_month_section matches the expected output
     assert result.strip() == expected_output.strip()
+
 
 def test_generate_markdown_report(tmp_path):
     """
