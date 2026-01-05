@@ -1,13 +1,13 @@
 # RAP Unit testing guide
 
 ## What are unit tests?
-Unit tests are small, automated tests that check individual pieces of code (functions, classes, modules) to ensure they work as expected.
+Unit tests are small, automated tests that check individual pieces of code (functions and classes) to ensure they work as expected.
 For examples of written tests, look through the scripts in the `tests` folder of the pipeline. More information on unit tests can be found
 in the QA for RAP learning resource [add link].
 
 ## Why unit tests matter in RAP
 - **Reproducibility:** Tests ensure code produces the same results every time.
-- **Automation:** Tests run automatically, saving time and reducing manual checking.
+- **Automation:** Tests can be run automatically using GitHub workflows (see `.github` folder for more information), saving time and reducing manual checking.
 - **Transparency:** Tests document what your code is supposed to do, making it easier to review and maintain.
 - **Quality:** Tests catch bugs and edge cases before code is used in production or shared with others.
 
@@ -49,6 +49,8 @@ in the QA for RAP learning resource [add link].
       assert result == expected_output
   ```
 - After adding tests, run them to check everything works as expected.
+
+For exercises on creating unit tests, go to the `04_unit_tests.ipynb` notebook in `exercises/`
 
 ## Practical tips
 - Add tests for every new function or module you create.

@@ -5,31 +5,59 @@ It helps you provide all necessary information and ensures standard checks are f
 You can find this template in the .github folder of the repository, and it will be visible when you create a PR via the GitHub web interface.
 -->
 
-# Pull Request Checklist
-
-Please review and check off each item before submitting your PR:
-
-- [ ] I have followed RAP best practices (reproducibility, automation, transparency).
-- [ ] My code follows PEP8 standards and includes comments/docstrings.
-- [ ] I have added or updated unit tests for new/changed code.
-- [ ] All tests pass locally (`pytest tests`).
-- [ ] I have updated documentation as needed.
-- [ ] I have described the changes clearly below.
-
-# Description of Changes
-
+## Description
+<details><summary>Please include a summary of the changes. </summary>
 <!-- Briefly describe what your PR changes, adds, or fixes. Include context for reviewers. -->
 
-# Additional Notes (Optional)
+  - What is this change?
+  - Is this a bug fix or a feature and does it break any existing functionality?
+  - How has it been tested?
+</details>
 
-<!-- Add any extra information for reviewers, such as links to related issues, screenshots, or questions. -->
+## Type of change
 
-# Reviewer Guidance
+*You can delete options that are not relevant.*
 
-- Please check that all standard checks pass.
-- Confirm that RAP principles are maintained.
-- Ask for clarification if anything is unclear.
+- [ ] Bug fix - *non-breaking change*
+- [ ] New feature - *non-breaking change*
+- [ ] Breaking change - *backwards incompatible change, changes expected behaviour*
+- [ ] Non-user facing change, structural change, dev functionality, docs ...
 
----
+## Checklist:
 
-*This template helps keep PRs consistent, clear, and easy to review. For more information, see the GitHub documentation on [pull request templates](https://docs.github.com/en/github/building-a-strong-community/creating-a-pull-request-template-for-your-repository).*
+- [ ] I have performed a self-review of my own code.
+- [ ] I have commented my code appropriately, focusing on explaining my design decisions (explain why, not how).
+- [ ] I have made corresponding changes to the documentation (comments, docstring, etc.. )
+- [ ] I have added tests that prove my fix is effective or that my feature works (see here for more information).
+- [ ] New and existing unit tests pass locally with my changes.
+- [ ] I have updated the changelog.
+- [ ] I have checked the pipeline runs with test data.
+
+<br>
+
+#  Peer review
+Any new code includes all the following:
+
+- **Documentation**: docstrings, comments have been added/ updated.
+- **Style guidelines**: New code conforms to the project's contribution guidelines.
+- **Functionality**: The code works fully implements the requirements and works as expected, handles expected edge cases, exceptions are handled appropriately.
+- **Complexity**: The code is not overly complex, logic has been split into appropriately sized functions, etc..
+- **Test coverage**: Unit tests cover essential functions for a reasonable range of inputs and conditions. Added and existing tests pass on my machine.
+
+### Review comments
+Suggestions should be tailored to the code that you are reviewing. Provide context.
+Be critical and clear, but not mean. Ask questions and set actions.
+<details><summary>These might include:</summary>
+
+- bugs that need fixing (does it work as expected? and does it work with other code
+  that it is likely to interact with?)
+- alternative methods (could it be written more efficiently or with more clarity?)
+- documentation improvements (does the documentation reflect how the code actually works?)
+- additional tests that should be implemented
+  - Do the tests effectively assure that it
+  works correctly? Are there additional edge cases/ negative tests to be considered?
+- code style improvements (could the code be written more clearly?)
+</details>
+<br>
+
+*Further reading: [code review best practices](https://best-practice-and-impact.github.io/qa-of-code-guidance/peer_review.html)*
