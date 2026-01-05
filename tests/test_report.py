@@ -27,6 +27,7 @@ def test_format_month_section():
     # Check that the output from format_month_section matches the expected output
     assert result.strip() == expected_output.strip()
 
+
 def test_generate_markdown_report(tmp_path):
     """
     Test the generate_markdown_report function to ensure it:
