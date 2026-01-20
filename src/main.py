@@ -1,5 +1,6 @@
 """
-main.py: Entry point for the RAP (Reproducible Analytical Pipeline) demo project.
+main.py: Entry point for the RAP (Reproducible Analytical Pipeline) demo
+project.
 
 This script coordinates the full analysis pipeline, including:
 - Loading configuration settings
@@ -39,6 +40,7 @@ def main():
     df_clean = clean_health_data(df)
     df_clean = add_bmi_column(df_clean)
     write_dataframe(df_clean, cleaned_path)
+
     # Processing
     prevalence_df = calculate_disease_prevalence(df_clean)
     print(f"Clean data outputted: {cleaned_path}")
@@ -49,4 +51,5 @@ def main():
 
 
 if __name__ == "__main__":
+    # Run the pipeline
     main()
