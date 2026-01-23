@@ -6,6 +6,8 @@
 # This will install all required dependencies for your pipeline, unit tests, and pre-commit hooks.
 # Update this file whenever you add new packages to your project.
 #
+# This is a simple form of dependency management.
+#
 # Example requirements for RAP-compliant Python project
 kaleido==1.1.0
 nbformat

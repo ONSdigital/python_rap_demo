@@ -1,7 +1,7 @@
 # .pre-commit-config.yaml for python_rap_demo RAP project
 #
 # This file configures pre-commit hooks, which automatically check and fix code before you commit changes to Git.
-# Pre-commit hooks help maintain code quality, consistency, and security by running checks
+# Pre-commit hooks help maintain code quality, and security by running checks
 # (like formatting, linting, and secret detection) every time you make a commit.
 #
 # To use this file:
