@@ -8,13 +8,17 @@ In a RAP project, the README is essential for:
 - Documenting setup steps and usage instructions
 - Outlining folder structure and key files
 - Explaining how to run the pipeline, tests, and automation tools
-- Sharing best practices for reproducibility, automation, and transparency
+- Any other information to help users and contributors understand and work with the project
 
-A well-written README makes your RAP project accessible and easy for others to use, review, or contribute to. Update it as your project evolves.
+The README file is the first file users and contributors will interact with in a RAP.
+A well-written README makes the RAP project accessible and easy for others to use, review, or contribute to.
+Update it as your project evolves.
 -->
 # Work in Progress - RAP demonstration repository for Python
 
 Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! This repository is designed for beginner to intermediate coders to practice RAP principles, experiment with code, and learn best practices for Reproducible Analytical Pipelines in Python.
+
+See the [Reproducible Analytical Pipelines]([PROVISIONAL_LINK]) materials on the Analysis for Action platform for more information about RAPs and their importance.
 
 **This repository is still in development**
 
@@ -98,6 +102,13 @@ Run tests with:
   ```cmd
   pytest tests
   ```
+
+## Troubleshooting
+If you encounter issues:
+- Ensure your virtual environment is activated. The terminal prompt should show `(.venv)` at the start.
+- Check that all dependencies are installed by running `pip install -r requirements.txt`.
+- Verify you are in the project root directory when running commands. The terminal should show the path ending with `python_rap_demo`.
+- For exercise notebooks, clean outputs and restart the kernel if you face issues.
 
 ## AI declaration
 
