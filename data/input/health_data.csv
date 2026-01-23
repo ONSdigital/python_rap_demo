@@ -1,4 +1,4 @@
-patient_id,month,age,gender,height_cm,weight_kg,smoker,diagnosis
+patient_id,month,age,sex,height_cm,weight_kg,smoker,diagnosis
 1,2025-01,45,M,,85,Yes,Hypertension
 2,2025-01,34,F,160,,No,Healthy
 3,2025-01,67,F,155,70,No,Diabetes

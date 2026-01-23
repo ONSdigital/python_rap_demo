@@ -1,11 +1,11 @@
 # What is the `config` folder?
 
-The `config` folder is used to store configuration (config) files that control how your RAP (Reproducible Analytical Pipeline) project runs. These files help separate settings from code, making your analysis easier to update, share, and reproduce.
+The `config` folder is used to store configuration (config) files that control how your RAP (Reproducible Analytical Pipeline) project runs. These files hold common parameters like file names, dates or other settings used across your code in one place. This helps to separate settings from code, making your analysis easier to update, share, and reproduce.
 
 ## Why is it important?
 - Keeps all important settings in one place
 - Makes it easy to change file paths, parameters, or options without editing code
-- Improves reproducibility and transparency
+- Improves reproducibility and transparency by documenting settings that are used for each run
 - Helps users and developers understand and customise the pipeline
 
 ## Common types of config files
@@ -21,6 +21,7 @@ The `config` folder is used to store configuration (config) files that control h
     - Advanced pipeline options
     - Debugging or logging settings
     - Experimental features
+    - Parameters for different types of tests
 - **Other config files**:
   - You can add config files for specific tools (e.g., `pre-commit`, `pytest`, `bandit`), or for different environments (e.g., production vs. development).
 
@@ -29,4 +30,4 @@ The `config` folder is used to store configuration (config) files that control h
 - Users of the pipeline can change where files are read from or written to without updating the code.
 
 ## Summary
-The `config` folder is a key part of making your RAP project flexible, reproducible, and easy to use. As your project grows, you can add more config files to organise and control different parts of your analysis.
+The `config` folder is a key part of making your RAP project flexible, reproducible, and easy to use. As your project grows, you can add more parameters to the config file or other config files to organise and control different parts of your analysis.
