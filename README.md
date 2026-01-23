@@ -51,6 +51,7 @@ See the [Reproducible Analytical Pipelines]([PROVISIONAL_LINK]) materials on the
 - `src/` — Main pipeline code and modules
 - `data/` — Example health data for analysis
 - `config/` — Configuration files (YAML)
+- `reports/` — Graphs and reports
 - `tests/` — Unit tests for pipeline modules
 - `exercises/` — **Practice exercises** (see below)
 - `docs/` — Documentation
