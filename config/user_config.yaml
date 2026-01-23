@@ -9,4 +9,4 @@
 # - Any other settings you want to change without editing code
 input_path: data/input/health_data.csv
 cleaned_path: data/outputs/cleaned/health_data_cleaned.csv
-report_dir: data/outputs/reports/
+report_dir: reports/
