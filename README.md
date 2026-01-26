@@ -14,7 +14,7 @@ The README file is the first file users and contributors will interact with in a
 A well-written README makes the RAP project accessible and easy for others to use, review, or contribute to.
 Update it as your project evolves.
 -->
-# Work in Progress - RAP demonstration repository for Python
+# RAP demonstration repository for Python
 
 Welcome to the RAP (Reproducible Analytical Pipeline) demonstration repository! This repository is designed for beginner to intermediate coders to practice RAP principles, experiment with code, and learn best practices for Reproducible Analytical Pipelines in Python.
 
